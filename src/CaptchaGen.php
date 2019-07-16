@@ -83,7 +83,7 @@ class CaptchaGen
 
         ob_start();
         imagejpeg($this->im, null, 100);
-        imagedestroy($this->im);
+        
         return ob_get_clean();
     }
 
@@ -104,6 +104,7 @@ class CaptchaGen
 
     public static function destroy()
     {
+        imagedestroy($this->im);
         unset($_SESSION[self::$sessionKeyName]);
     }
 

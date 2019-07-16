@@ -30,5 +30,10 @@ $captcha = CaptchaGen::getInstance(['length'=>10]);
 <form method="post">
 <input name="captcha" type="text" value=""/>
 <img src="<?php echo $captcha->getImg() ?>" />
+<img src="<?php echo $captcha->getImg() ?>" />
+<img src="<?php echo $captcha->getImg() ?>" />
+<img src="<?php echo $captcha->getImg() ?>" />
+<img src="<?php echo $captcha->getImg() ?>" />
+<img src="<?php echo $captcha->getImg() ?>" />
 <br>
 <button type="submit">Submit</button>
